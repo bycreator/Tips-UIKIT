@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html >
+  <head>
+    <meta charset="UTF-8">
+    <title>UIkit</title>
+    
+    
+    <link rel="stylesheet" href="css/normalize.css">
+
+    <link rel='stylesheet prefetch' href='http://cdnjs.cloudflare.com/ajax/libs/uikit/2.18.0/css/uikit.min.css'>
+<link rel='stylesheet prefetch' href='http://cdnjs.cloudflare.com/ajax/libs/uikit/2.18.0/css/components/sticky.min.css'>
+
+        <link rel="stylesheet" href="css/style.css">
+
+    
+    
+    
+  </head>
+
+  <body>
+
+    <nav data-uk-sticky id="items" class="uk-navbar">
+  <label class="uk-navbar-content uk-hidden-small">Filter:</label>
+  <ul class="uk-navbar-nav uk-hidden-small">
+    <li data-uk-filter="" class="uk-active"><a href="#">ALL</a></li>
+    <li data-uk-filter="blue"><a href="#">BLUE</a></li>
+    <li data-uk-filter="green"><a href="#">GREEN</a></li>
+  </ul>
+
+  <label class="uk-navbar-content uk-hidden-small">Sort:</label>
+  <ul class="uk-navbar-nav uk-hidden-small">
+    <li data-uk-sort="numbers"><a href="#">NUMBERS <i class="uk-icon-sort-numeric-asc"></i></a></li>
+    <li data-uk-sort="numbers:desc"><a href="#">NUMBERS <i class="uk-icon-sort-numeric-desc"></i></a></li>
+    <li data-uk-sort="letters"><a href="#">LETTERS <i class="uk-icon-sort-alpha-asc"></i></a></li>
+    <li data-uk-sort="letters:desc"><a href="#">LETTERS <i class="uk-icon-sort-alpha-desc"></i></a></li>
+  </ul>
+  <div data-uk-dropdown="{mode:'click'}">
+    <a href="#" class="uk-navbar-toggle uk-visible-small"></a>
+    <div class="uk-dropdown uk-dropdown-navbar">
+      <ul class="uk-nav uk-nav-navbar">
+        <li class="uk-nav-header">Filter:</li>
+        <li data-uk-filter="" class="uk-active"><a href="#">ALL</a></li>
+        <li data-uk-filter="blue"><a href="#">BLUE</a></li>
+        <li data-uk-filter="green"><a href="#">GREEN</a></li>
+        <li class="uk-nav-divider"></li>
+      </ul>
+      <ul class="uk-nav uk-nav-navbar">
+        <li class="uk-nav-header">Sort:</li>
+        <li data-uk-sort="numbers"><a href="#">NUMBERS <i class="uk-icon-sort-numeric-asc"></i></a></li>
+        <li data-uk-sort="numbers:desc"><a href="#">NUMBERS <i class="uk-icon-sort-numeric-desc"></i></a></li>
+        <li data-uk-sort="letters"><a href="#">LETTERS <i class="uk-icon-sort-alpha-asc"></i></a></li>
+        <li data-uk-sort="letters:desc"><a href="#">LETTERS <i class="uk-icon-sort-alpha-desc"></i></a></li>
+      </ul>                 
+    </div>
+  </div>        
+</nav>
+
+<div class="uk-container uk-container-center uk-margin-top">
+
+  <div class="uk-grid-width-small-1-1 uk-grid-width-medium-1-4" data-uk-grid="{gutter: 20, controls: '#items', duration: 500}">
+
+    <div data-uk-filter="blue" data-numbers="4" data-letters="A">
+      <figure class="uk-thumbnail uk-overlay uk-overlay-hover">
+        <img class="uk-overlay-fade" src="http://placehold.it/1200x800/1e90ff/fff&text=A+4">
+        <div class="uk-overlay-panel  uk-flex uk-flex-center uk-flex-middle uk-text-center">
+          <button class="uk-button" data-uk-modal="{target:'#project-details'}" type="button">VIEW MORE</button>
+        </div>
+        <figcaption class="uk-thumbnail-caption">My Project</figcaption>
+      </figure>
+      <div id="project-details" class="uk-modal">
+        <div class="uk-modal-dialog">
+          <a class="uk-modal-close uk-close"></a>
+          <div class="uk-modal-header"><h2>My Project Title</h2></div>
+          <div class="uk-overflow-container">
+            <img src="http://placehold.it/1200x800/1e90ff/fff&text=My+Project+Image">
+            <p>
+              Lorem ipsum dolor sit amet, mollis inciderint ei eam, esse senserit consequat eum at, at est bonorum omittam. Vel te corpora electram accommodare, no nisl ferri appetere est. Usu cu sale gubergren. Oratio detraxit sea id, ex quo adipisci repudiare laboramus. Dolor reprimique appellantur ei duo, eum at idque efficiantur. Cu ius ridens graeco doctus, inimicus postulant efficiantur pri te.
+
+              Eam ea eligendi mnesarchum, mea dico mollis meliore no. Dico utamur duo eu. Ut brute suscipit patrioque ius. Ex recusabo postulant elaboraret mea, ei pri propriae patrioque similique, ad duo oratio facilisi definitionem. Eam ex alii populo causae, malis audire mediocritatem ut est.
+
+              Est dictas vituperata ne. Ancillae consequat quo ea. His ea congue hendrerit vituperatoribus, eum cu alii esse dissentiet. Id his illum libris malorum. Ne vel tantas tamquam sententiae, veri possit mea et, cibo intellegam ne duo. Et duis quaeque usu. Per harum accusata eu, errem tantas definiebas nam no.
+
+              Altera admodum eu mei, doming expetenda quo te, mucius putant duo ei. Est accusam efficiantur at. Has ipsum nusquam scribentur at, vis ridens impedit ut. At blandit singulis senserit ius. Et cum consul nusquam, dolor dictas dignissim pro et. Vix inani possim voluptatum ne. Ex eos convenire adversarium.
+
+              Ius labore epicuri in. Nulla partem ut vix, vis cu vide noster oportere, putent philosophia vis te. Cu aperiam legimus definitiones mei, eros perfecto ex sit. An mel amet virtute lobortis. Latine ocurreret elaboraret id quo. Debet lobortis pri ut, at duo hinc menandri elaboraret, eum assum aeterno alienum in. Eum altera inermis interesset ea.
+            </p>
+            <p>
+              Lorem ipsum dolor sit amet, mollis inciderint ei eam, esse senserit consequat eum at, at est bonorum omittam. Vel te corpora electram accommodare, no nisl ferri appetere est. Usu cu sale gubergren. Oratio detraxit sea id, ex quo adipisci repudiare laboramus. Dolor reprimique appellantur ei duo, eum at idque efficiantur. Cu ius ridens graeco doctus, inimicus postulant efficiantur pri te.
+
+              Eam ea eligendi mnesarchum, mea dico mollis meliore no. Dico utamur duo eu. Ut brute suscipit patrioque ius. Ex recusabo postulant elaboraret mea, ei pri propriae patrioque similique, ad duo oratio facilisi definitionem. Eam ex alii populo causae, malis audire mediocritatem ut est.
+
+              Est dictas vituperata ne. Ancillae consequat quo ea. His ea congue hendrerit vituperatoribus, eum cu alii esse dissentiet. Id his illum libris malorum. Ne vel tantas tamquam sententiae, veri possit mea et, cibo intellegam ne duo. Et duis quaeque usu. Per harum accusata eu, errem tantas definiebas nam no.
+
+              Altera admodum eu mei, doming expetenda quo te, mucius putant duo ei. Est accusam efficiantur at. Has ipsum nusquam scribentur at, vis ridens impedit ut. At blandit singulis senserit ius. Et cum consul nusquam, dolor dictas dignissim pro et. Vix inani possim voluptatum ne. Ex eos convenire adversarium.
+
+              Ius labore epicuri in. Nulla partem ut vix, vis cu vide noster oportere, putent philosophia vis te. Cu aperiam legimus definitiones mei, eros perfecto ex sit. An mel amet virtute lobortis. Latine ocurreret elaboraret id quo. Debet lobortis pri ut, at duo hinc menandri elaboraret, eum assum aeterno alienum in. Eum altera inermis interesset ea.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div data-uk-filter="green" data-numbers="2" data-letters="C">
+      <figure class="uk-thumbnail uk-thumbnail-expand uk-overlay uk-overlay-hover">
+        <img class="uk-overlay-fade" src="http://placehold.it/1200x800/9acd32/fff&text=C+2">
+        <div class="uk-overlay-panel uk-overlay-scale uk-flex uk-flex-center uk-flex-middle uk-text-center">
+          <button class="uk-button" type="button">VIEW MORE</button>
+        </div>
+        <figcaption class="uk-thumbnail-caption">My Project</figcaption>
+      </figure>
+    </div>
+
+    <div data-uk-filter="blue" data-numbers="3" data-letters="D">
+      <figure class="uk-thumbnail uk-thumbnail-expand uk-overlay uk-overlay-hover">
+        <img class="uk-overlay-fade" src="http://placehold.it/1200x800/1e90ff/fff&text=D+3">
+        <div class="uk-overlay-panel uk-overlay-scale uk-flex uk-flex-center uk-flex-middle uk-text-center">
+          <button class="uk-button" type="button">VIEW MORE</button>
+        </div>
+        <figcaption class="uk-thumbnail-caption">My Project</figcaption>
+      </figure>
+    </div>
+
+    <div data-uk-filter="green" data-numbers="1" data-letters="B">
+      <figure class="uk-thumbnail uk-thumbnail-expand uk-overlay uk-overlay-hover">
+        <img class="uk-overlay-fade" src="http://placehold.it/1200x800/9acd32/fff&text=B+1">
+        <div class="uk-overlay-panel uk-overlay-scale uk-flex uk-flex-center uk-flex-middle uk-text-center">
+          <button class="uk-button" type="button">VIEW MORE</button>
+        </div>
+        <figcaption class="uk-thumbnail-caption">My Project</figcaption>
+      </figure>
+    </div>        
+
+    <div data-uk-filter="green" data-numbers="5" data-letters="G">
+      <figure class="uk-thumbnail uk-thumbnail-expand uk-overlay uk-overlay-hover">
+        <img class="uk-overlay-fade" src="http://placehold.it/1200x800/9acd32/fff&text=G+5">
+        <div class="uk-overlay-panel uk-overlay-scale uk-flex uk-flex-center uk-flex-middle uk-text-center">
+          <button class="uk-button" type="button">VIEW MORE</button>
+        </div>
+        <figcaption class="uk-thumbnail-caption">My Project</figcaption>
+      </figure>
+    </div>   
+
+    <div data-uk-filter="blue" data-numbers="6" data-letters="F">
+      <figure class="uk-thumbnail uk-thumbnail-expand uk-overlay uk-overlay-hover">
+        <img class="uk-overlay-fade" src="http://placehold.it/1200x800/1e90ff/fff&text=F+6">
+        <div class="uk-overlay-panel uk-overlay-scale uk-flex uk-flex-center uk-flex-middle uk-text-center">
+          <button class="uk-button" type="button">VIEW MORE</button>
+        </div>
+        <figcaption class="uk-thumbnail-caption">My Project</figcaption>
+      </figure>
+    </div>   
+
+    <div data-uk-filter="green" data-numbers="8" data-letters="E">
+      <figure class="uk-thumbnail uk-thumbnail-expand uk-overlay uk-overlay-hover">
+        <img class="uk-overlay-fade" src="http://placehold.it/1200x800/9acd32/fff&text=E+8">
+        <div class="uk-overlay-panel uk-overlay-scale uk-flex uk-flex-center uk-flex-middle uk-text-center">
+          <button class="uk-button" type="button">VIEW MORE</button>
+        </div>
+        <figcaption class="uk-thumbnail-caption">My Project</figcaption>
+      </figure>
+    </div>   
+
+    <div data-uk-filter="blue" data-numbers="7" data-letters="H">
+      <figure class="uk-thumbnail uk-thumbnail-expand uk-overlay uk-overlay-hover">
+        <img class="uk-overlay-fade" src="http://placehold.it/1200x800/1e90ff/fff&text=H+7">
+        <div class="uk-overlay-panel uk-overlay-scale uk-flex uk-flex-center uk-flex-middle uk-text-center">
+          <button class="uk-button" type="button">VIEW MORE</button>
+        </div>
+        <figcaption class="uk-thumbnail-caption">My Project</figcaption>
+      </figure>
+    </div>   
+
+    <div data-uk-filter="green" data-numbers="11" data-letters="L">
+      <figure class="uk-thumbnail uk-thumbnail-expand uk-overlay uk-overlay-hover">
+        <img class="uk-overlay-fade" src="http://placehold.it/1200x800/9acd32/fff&text=L+11">
+        <div class="uk-overlay-panel uk-overlay-scale uk-flex uk-flex-center uk-flex-middle uk-text-center">
+          <button class="uk-button" type="button">VIEW MORE</button>
+        </div>
+        <figcaption class="uk-thumbnail-caption">My Project</figcaption>
+      </figure>
+    </div>   
+
+    <div data-uk-filter="blue" data-numbers="9" data-letters="J">
+      <figure class="uk-thumbnail uk-thumbnail-expand uk-overlay uk-overlay-hover">
+        <img class="uk-overlay-fade" src="http://placehold.it/1200x800/1e90ff/fff&text=J+9">
+        <div class="uk-overlay-panel uk-overlay-scale uk-flex uk-flex-center uk-flex-middle uk-text-center">
+          <button class="uk-button" type="button">VIEW MORE</button>
+        </div>
+        <figcaption class="uk-thumbnail-caption">My Project</figcaption>
+      </figure>
+    </div>   
+
+    <div data-uk-filter="blue" data-numbers="12" data-letters="K">
+      <figure class="uk-thumbnail uk-thumbnail-expand uk-overlay uk-overlay-hover">
+        <img class="uk-overlay-fade" src="http://placehold.it/1200x800/1e90ff/fff&text=K+12">
+        <div class="uk-overlay-panel uk-overlay-scale uk-flex uk-flex-center uk-flex-middle uk-text-center">
+          <button class="uk-button" type="button">VIEW MORE</button>
+        </div>
+        <figcaption class="uk-thumbnail-caption">My Project</figcaption>
+      </figure>
+    </div>   
+
+    <div data-uk-filter="green" data-numbers="10" data-letters="I">
+      <figure class="uk-thumbnail uk-thumbnail-expand uk-overlay uk-overlay-hover">
+        <img class="uk-overlay-fade" src="http://placehold.it/1200x800/9acd32/fff&text=I+10">
+        <div class="uk-overlay-panel uk-overlay-scale uk-flex uk-flex-center uk-flex-middle uk-text-center">
+          <button class="uk-button" type="button">VIEW MORE</button>
+        </div>
+        <figcaption class="uk-thumbnail-caption">My Project</figcaption>
+      </figure>
+    </div>    
+
+    <div data-uk-filter="green" data-numbers="13" data-letters="N">
+      <figure class="uk-thumbnail uk-thumbnail-expand uk-overlay uk-overlay-hover">
+        <img class="uk-overlay-fade" src="http://placehold.it/1200x800/9acd32/fff&text=N+13">
+        <div class="uk-overlay-panel uk-overlay-scale uk-flex uk-flex-center uk-flex-middle uk-text-center">
+          <button class="uk-button" type="button">VIEW MORE</button>
+        </div>
+        <figcaption class="uk-thumbnail-caption">My Project</figcaption>
+      </figure>
+    </div>   
+
+    <div data-uk-filter="green" data-numbers="15" data-letters="O">
+      <figure class="uk-thumbnail uk-thumbnail-expand uk-overlay uk-overlay-hover">
+        <img class="uk-overlay-fade" src="http://placehold.it/1200x800/9acd32/fff&text=O+15">
+        <div class="uk-overlay-panel uk-overlay-scale uk-flex uk-flex-center uk-flex-middle uk-text-center">
+          <button class="uk-button" type="button">VIEW MORE</button>
+        </div>
+        <figcaption class="uk-thumbnail-caption">My Project</figcaption>
+      </figure>
+    </div>   
+
+    <div data-uk-filter="blue" data-numbers="14" data-letters="P">
+      <figure class="uk-thumbnail uk-thumbnail-expand uk-overlay uk-overlay-hover">
+        <img class="uk-overlay-fade" src="http://placehold.it/1200x800/1e90ff/fff&text=P+14">
+        <div class="uk-overlay-panel uk-overlay-scale uk-flex uk-flex-center uk-flex-middle uk-text-center">
+          <button class="uk-button" type="button">VIEW MORE</button>
+        </div>
+        <figcaption class="uk-thumbnail-caption">My Project</figcaption>
+      </figure>
+    </div>   
+
+    <div data-uk-filter="green" data-numbers="16" data-letters="M">
+      <figure class="uk-thumbnail uk-thumbnail-expand uk-overlay uk-overlay-hover">
+        <img class="uk-overlay-fade" src="http://placehold.it/1200x800/9acd32/fff&text=M+16">
+        <div class="uk-overlay-panel uk-overlay-scale uk-flex uk-flex-center uk-flex-middle uk-text-center">
+          <button class="uk-button" type="button">VIEW MORE</button>
+        </div>
+        <figcaption class="uk-thumbnail-caption">My Project</figcaption>
+      </figure>
+    </div>                         
+
+  </div>
+
+</div>
+    <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js'></script>
+<script src='http://cdnjs.cloudflare.com/ajax/libs/uikit/2.18.0/js/uikit.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/uikit/2.18.0/js/components/grid.min.js'></script>
+<script src='http://cdnjs.cloudflare.com/ajax/libs/uikit/2.18.0/js/components/sticky.min.js'></script>
+
+        <script src="js/index.js"></script>
+
+    
+    
+    
+  </body>
+</html>

@@ -1,0 +1,8 @@
+/*
+NOTE: Only the first item has the modal overlay functionality
+*/
+
+/* This is to override a bizarre line in UIkit's navbar styles */
+.uk-navbar-nav>li>a[href='#'] {
+  cursor: pointer;
+}
